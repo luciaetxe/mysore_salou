@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Yoga Mysore Salou{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='media/favicon-32x32.png') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="main-header sticky">
+    <div class="container">
+        <h1 class="logo">YOGA MYSORE SALOU</h1>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Inicio</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Descubre ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="{{ url_for('nuevo_en_yoga') }}">Nuevo en Yoga</a></li>
+                        <li><a href="{{ url_for('el_metodo') }}">El Método</a></li>
+                        <li><a href="{{ url_for('filosofia') }}">Filosofía</a></li>
+                        <li><a href="{{ url_for('mantras') }}">Mantras</a></li>
+                        <li><a href="{{ url_for('etiqueta') }}">Etiqueta en la Sala</a></li>
+                        <li><a href="{{ url_for('acompanantes') }}">Acompañantes</a></li>
+                        <li><a href="{{ url_for('galeria') }}">Galería</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ url_for('horarios_tarifas') }}">Horarios y Tarifas</a></li>
+                <li><a href="{{ url_for('nuevo_en_yoga') }}">Clases</a></li>
+                <li><a href="{{ url_for('eventos') }}">Eventos y Talleres</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Contenido dinámico -->
+{% block content %}
+{% endblock %}
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Yoga Mysore Salou. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yoga.mysore.salou/" target="_blank" aria-label="Instagram">
+                <img src="{{ url_for('static', filename='media/insta-icon.png') }}" alt="Instagram">
+            </a>
+            <a href="https://wa.me/34647238817" target="_blank" aria-label="WhatsApp">
+                <img src="{{ url_for('static', filename='media/whats-icon.png') }}" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='menu.js') }}"></script>
+</body>
+</html>

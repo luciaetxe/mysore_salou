@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Acompañantes - Yoga Mysore Salou{% endblock %}
+
+{% block content %}
+
+<section>
+    <div class="container">
+        <h2>Acompañantes</h2>
+        <p>En Yoga Mysore Salou creemos en la transmisión directa del conocimiento, de maestra a alumna, de corazón a corazón.</p>
+
+        <!-- Ximena arriba derecha -->
+        <div class="acompanante">
+            <div class="acompanante-text">
+                <h3>Ximena Urzúa</h3>
+                <p>Fundadora y madre del espacio Yoga Mysore Salou. Ximena es practicante dedicada y acompañante principal en la sala. Su camino se nutre de la práctica diaria, la entrega y la enseñanza de su maestra Tabata Trejo.</p>
+            </div>
+            <img src="{{ url_for('static', filename='media/ximena.png') }}" alt="Ximena Urzúa">
+        </div>
+
+        <!-- Tabata abajo izquierda -->
+        <div class="acompanante reverse">
+            <img src="{{ url_for('static', filename='media/tabata.png') }}" alt="Tabata Trejo">
+            <div class="acompanante-text">
+                <h3>Tabata Trejo</h3>
+                <p>Maestra certificada de Ashtanga Yoga y maestra directa de Ximena. Tabata visita regularmente la sala de Yoga Mysore Salou para guiar, ajustar y transmitir la esencia del método tradicional de Mysore.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

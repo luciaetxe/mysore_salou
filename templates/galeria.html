@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Galería - Yoga Mysore Salou{% endblock %}
+
+{% block content %}
+
+<section class="about-section">
+    <div class="container">
+        <h2>Galería</h2>
+        <p>Descubre algunos momentos y rincones especiales de nuestra sala, las prácticas y los eventos de Yoga Mysore Salou.</p>
+
+        <div class="galeria-grid">
+            <!-- Sustituye estas rutas por las imágenes reales que quieras mostrar -->
+            <img src="{{ url_for('static', filename='media/gallery1.png') }}" alt="Galería 1">
+            <img src="{{ url_for('static', filename='media/gallery2.png') }}" alt="Galería 2">
+            <img src="{{ url_for('static', filename='media/gallery3.png') }}" alt="Galería 3">
+            <img src="{{ url_for('static', filename='media/gallery4.png') }}" alt="Galería 4">
+            <img src="{{ url_for('static', filename='media/gallery5.png') }}" alt="Galería 5">
+            <img src="{{ url_for('static', filename='media/gallery6.png') }}" alt="Galería 6">
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
