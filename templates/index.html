@@ -16,10 +16,32 @@
     <div class="container">
         <h2>Yoga Mysore Salou</h2>
         <p>Un lugar de encuentro para la comunidad de yoga en la provincia de Tarragona. Nuestra escuela está dedicada al método tradicional de Ashtanga Yoga, en formato Mysore. Aquí encontrarás un espacio de respeto, crecimiento personal y acompañamiento en tu práctica.</p>
-        <p>Guiado por Ximena Urzúa, alumna directa de Tabata Trejo, Yoga Mysore Salou mantiene viva la enseñanza tradicional con visitas mensuales de la maestra.</p>
+        <p>Guiado por <strong>Ximena Urzúa</strong>, practicante comprometida y alumna directa de Tabata Trejo, Yoga Mysore Salou mantiene viva la enseñanza tradicional con visitas mensuales de la maestra.</p>
         <a href="{{ url_for('el_metodo') }}" class="btn">Descubre el Método</a>
+    </div>
+</section>
+<section class="imagen-destacada">
+  <img src="{{ url_for('static', filename='media/gallery4.png') }}" alt="Sala de yoga Mysore Salou">
+</section>
+<section class="destacados">
+    <div class="destacados-grid">
+        <a href="{{ url_for('nuevo_en_yoga') }}" class="destacado-card">
+            <h3>Nuevo en Yoga</h3>
+            <p>¿Es tu primera vez? Aquí tienes todo lo esencial</p>
+        </a>
+        <a href="{{ url_for('horarios_tarifas') }}" class="destacado-card">
+            <h3>Horarios y Tarifas</h3>
+            <p>Consulta todas las opciones para unirte a la sala</p>
+        </a>
+        <a href="{{ url_for('eventos') }}" class="destacado-card">
+            <h3>Eventos y Talleres</h3>
+            <p>Actividades especiales para profundizar</p>
+        </a>
+        <a href="{{ url_for('contacto') }}" class="destacado-card">
+            <h3>Contacto</h3>
+            <p>Escríbenos para reservar o resolver tus dudas</p>
+        </a>
     </div>
 </section>
 
 {% endblock %}
-

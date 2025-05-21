@@ -4,35 +4,36 @@
 
 {% block content %}
 
-<section class="about-section">
-    <div class="container">
-        <h2>Nuevo en Yoga</h2>
-        <p>Si es tu primera vez practicando yoga, ¡bienvenida! En nuestro espacio te acompañamos desde el inicio, respetando tu ritmo y necesidades individuales.</p>
+<section class="about-con-imagen">
+    <div class="container-imagen">
+        <div class="texto">
+            <h2>Nuevo en Yoga</h2>
+            <p>Si es tu primera vez practicando yoga, ¡bienvenida! En nuestro espacio te acompañamos desde el inicio, respetando tu ritmo y necesidades individuales.</p>
+            <h3>¿Qué es el estilo Mysore?</h3>
+            <p>En nuestras clases estilo Mysore, cada practicante avanza a su propio ritmo. El acompañante te guía de forma personalizada, ayudándote a memorizar la secuencia y adaptando las posturas según tu experiencia y condición física.</p>
+            <h3>¿Qué esperar en tu primera clase?</h3>
+            <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
+                <li><strong>Duración:</strong> Aproximadamente 30 a 45 minutos.</li>
+                <li><strong>Enseñanza personalizada:</strong> Aprenderás paso a paso, comenzando por los Saludos al Sol y posturas básicas.</li>
+                <li><strong>Atención individual:</strong> El acompañante te asistirá en todo momento, asegurando una práctica segura y efectiva.</li>
+            </ul>
+            <h3>Recomendaciones para principiantes</h3>
+            <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
+                <li>Asiste con regularidad. La práctica constante es clave para progresar.</li>
+                <li>Escucha a tu cuerpo. Avanza según tus posibilidades, sin forzarte.</li>
+                <li>Consulta al acompañante si tienes dudas o molestias.</li>
+            </ul>
 
-        <h3>¿Qué es el estilo Mysore?</h3>
-        <p>En nuestras clases estilo Mysore, cada practicante avanza a su propio ritmo. El acompañante te guía de forma personalizada, ayudándote a memorizar la secuencia y adaptando las posturas según tu experiencia y condición física.</p>
-
-        <h3>¿Qué esperar en tu primera clase?</h3>
-        <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
-            <li><strong>Duración:</strong> Aproximadamente 30 a 45 minutos.</li>
-            <li><strong>Enseñanza personalizada:</strong> Aprenderás paso a paso, comenzando por los Saludos al Sol y posturas básicas.</li>
-            <li><strong>Atención individual:</strong> El acompañante te asistirá en todo momento, asegurando una práctica segura y efectiva.</li>
-        </ul>
-
-        <h3>Recomendaciones para principiantes</h3>
-        <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
-            <li>Asiste con regularidad. La práctica constante es clave para progresar.</li>
-            <li>Escucha a tu cuerpo. Avanza según tus posibilidades, sin forzarte.</li>
-            <li>Consulta al acompañante si tienes dudas o molestias.</li>
-        </ul>
-
-        <h3>Recursos adicionales</h3>
-        <p>Para complementar tu práctica, te recomendamos:</p>
-        <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
-            <li>Lectura: "Yoga Mala" de Sri K. Pattabhi Jois.</li>
-            <li>Video recomendado: <a href="https://www.youtube.com/watch?v=1Krp4W0TlAU" target="_blank">Ashtanga Yoga for Beginners - Half Primary Series</a>.</li>
-        </ul>
-
+            <h3>Recursos adicionales</h3>
+            <p>Para complementar tu práctica, te recomendamos:</p>
+            <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
+                <li>Lectura: "Yoga Mala" de Sri K. Pattabhi Jois.</li>
+                <li>Video recomendado: <a href="https://www.youtube.com/watch?v=1Krp4W0TlAU" target="_blank">Ashtanga Yoga for Beginners - Half Primary Series</a>.</li>
+            </ul>
+        </div>
+        <div class="imagen">
+            <img src="{{ url_for('static', filename='media/gallery2.png') }}" alt="Bienvenida a la sala">
+        </div>
     </div>
 </section>
 
